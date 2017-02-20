@@ -49,5 +49,21 @@
             android:text="ListView"
             android:textAllCaps="false"/>
 
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="InstreamVideo AD"
+            android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+        <Button
+            android:id="@+id/instream_video"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="InstreamVideo"
+            android:textAllCaps="false"/>
+
     </LinearLayout>
 </RelativeLayout>
