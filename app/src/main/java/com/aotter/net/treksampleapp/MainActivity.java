@@ -8,6 +8,7 @@ import android.os.Bundle;
 import com.aotter.net.trek.ads.AdError;
 import com.aotter.net.trek.ads.TrekAd;
 import com.aotter.net.trek.ads.interfaces.InstreamVideoListener;
+import com.aotter.net.treksampleapp.activity.InterActiveListViewActivity;
 import com.aotter.net.treksampleapp.activity.NativeListViewActivity;
 import com.aotter.net.treksampleapp.activity.VideoListViewActivity;
 
@@ -83,5 +84,12 @@ public class MainActivity extends AppCompatActivity {
     public void goInstream_List() {
         if (FLAG_VIDEO)
             trekAd.showInstreamVideo();
+    }
+
+    @OnClick(R.id.native_interactive)
+    public void goNativeInterActive() {
+        Intent intent = new Intent();
+        intent.setClass(this, InterActiveListViewActivity.class);
+        startActivity(intent);
     }
 }
